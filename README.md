@@ -1,8 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kids Adventure Finder 🌟
 
-## Getting Started
+A web application that helps you find kids-friendly favorite spots in any city using AI-powered recommendations.
 
-First, run the development server:
+## Features
+
+- 🎨 Beautiful, kids-friendly UI with vibrant colors and animations
+- 🤖 AI-powered spot recommendations using OpenAI API
+- 📍 Customizable number of favorite spots (1-20)
+- 📱 Fully responsive design
+- ⚡ Fast and modern Next.js application
+
+## Future Features
+
+- 🗺️ Map view to choose the city
+- 🔍 Enhanced search with filters and preferences
+
+## Prerequisites
+
+- Node.js (v18 or higher)
+- OpenAI API key ([Get one here](https://platform.openai.com/api-keys))
+
+## Setup
+
+1. **Clone the repository and install dependencies:**
+
+```bash
+npm install
+```
+
+2. **Configure OpenAI API key:**
+
+Create a `.env.local` file in the root directory:
+
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+See [ENV_SETUP.md](ENV_SETUP.md) for detailed instructions.
+
+3. **Run the development server:**
 
 ```bash
 npm run dev
@@ -14,11 +50,22 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Enter a city name (e.g., "New York", "Paris", "Tokyo")
+2. Specify how many favorite spots you want to discover (1-20)
+3. Click "Find Fun Spots!" to get AI-powered recommendations
+4. Browse through kid-friendly locations with descriptions and reasons why they're great for ages 5-12
+
+## Technology Stack
+
+- **Framework:** Next.js 15 with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **AI:** OpenAI API with structured outputs
+- **UI/UX:** Kids-friendly design with vibrant colors and animations
 
 ## Learn More
 
